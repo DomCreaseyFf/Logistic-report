@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WK27 Logistics Email Summary</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f0e8;margin:0;padding:32px;}
+  .email{max-width:680px;margin:0 auto;background:white;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.1);}
+  .header{background:#2d4a2d;color:white;padding:32px 40px;border-bottom:4px solid #d4a017;}
+  .header h1{font-size:20px;font-weight:700;margin:0 0 4px;}
+  .header p{font-size:13px;opacity:.7;margin:0;}
+  .body{padding:32px 40px;}
+  .section{margin-bottom:28px;}
+  .section h2{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#2d4a2d;margin:0 0 12px;padding-bottom:6px;border-bottom:2px solid #e8e8e8;}
+  p{font-size:14px;line-height:1.7;color:#333;margin:0 0 10px;}
+  .metric-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px;}
+  .metric{background:#f5f0e8;border-radius:8px;padding:12px 16px;flex:1;min-width:120px;}
+  .metric .val{font-size:22px;font-weight:800;color:#2d4a2d;}
+  .metric .lbl{font-size:11px;color:#777;text-transform:uppercase;letter-spacing:.3px;margin-top:2px;}
+  .metric.warn .val{color:#d4a017;}
+  .metric.bad .val{color:#c0392b;}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px;}
+  th{background:#2d4a2d;color:white;padding:8px 10px;text-align:left;font-size:11px;text-transform:uppercase;}
+  td{padding:7px 10px;border-bottom:1px solid #f0f0f0;}
+  tr:last-child td{border-bottom:none;}
+  .good{color:#2d7a2d;font-weight:600;}
+  .warn{color:#d4a017;font-weight:600;}
+  .bad{color:#c0392b;font-weight:600;}
+  .action-badge{display:inline-block;padding:2px 8px;border-radius:99px;font-size:10px;font-weight:700;}
+  .badge-open{background:#fdf8ec;color:#b87800;border:1px solid #f0c040;}
+  .badge-inprogress{background:#eef3fb;color:#1a5fa8;border:1px solid #90b8e8;}
+  .footer{background:#f0f0f0;padding:20px 40px;font-size:12px;color:#888;border-top:1px solid #e0e0e0;}
+  .link-box{background:#2d4a2d;color:white;padding:14px 20px;border-radius:8px;margin:16px 0;font-size:13px;}
+  .link-box a{color:#f0c040;font-weight:700;}
+  .copy-hint{font-size:11px;color:#999;text-align:center;margin-top:16px;font-style:italic;}
+</style>
+</head>
+<body>
+<div class="email">
+  <div class="header">
+    <h1>Freddie's Flowers — Week 27 Logistics Report</h1>
+    <p>Shareholder Summary · Prepared Friday, 10 July 2026</p>
+  </div>
+  <div class="body">
+
+    <div class="section">
+      <h2>Opening</h2>
+      <p>Please find below a summary of our logistics performance for Week 27. The full interactive report — including courier-level breakdowns, error trends, driver analysis, and weekly comparisons — is available at the link below.</p>
+      <div class="link-box">📊 Full report: <a href="[INSERT REPORT URL HERE]">[INSERT REPORT URL HERE]</a></div>
+    </div>
+
+    <div class="section">
+      <h2>Network Overview</h2>
+      <div class="metric-row">
+        <div class="metric"><div class="val">23,735</div><div class="lbl">Total Orders</div></div>
+        <div class="metric warn">
+          <div class="val">0.72%</div><div class="lbl">Chargeable Rate (▼ 0.10pp)</div></div>
+        <div class="metric"><div class="val">0.92%</div><div class="lbl">Total Error Rate</div></div>
+        <div class="metric"><div class="val" style="font-size:14px">Abel &amp; Cole 96% · Global Heston 92% · FF Bikes SW 96%</div><div class="lbl">DOT</div></div>
+      </div>
+      <p>Network chargeable error rate improved this week (▼ 0.10pp).
+      <strong>Abel & Cole</strong> was the best-performing courier at 0.37%.
+      <strong>DPD</strong> had the highest error rate at 1.55%, requiring continued focus.</p>
+    </div>
+
+    <div class="section">
+      <h2>Courier Performance</h2>
+      <table>
+        <thead><tr><th>Courier</th><th>Chargeable Rate</th><th>vs Previous Week</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Abel &amp; Cole</strong></td><td class="good">0.37%</td><td> (▼ 0.12pp)</td><td style="font-size:12px;color:#555">Great performance from A&C second week running, issues with Kent Depot still.</td></tr><tr><td><strong>Global Heston</strong></td><td class="good">0.50%</td><td> (▼ 0.49pp)</td><td style="font-size:12px;color:#555">Good performance with GSG, chargeable errors down by half.</td></tr><tr><td><strong>FF Bikes SW</strong></td><td class="warn">0.51%</td><td> (▲ 0.08pp)</td><td style="font-size:12px;color:#555">Good performance, Monday still tough day for Bikes</td></tr><tr><td><strong>DPD</strong></td><td class="bad">1.55%</td><td> (▲ 0.10pp)</td><td style="font-size:12px;color:#555">Steady performance compared to last week, still issues with parcel held</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    
+    <div class="section">
+      <h2>Top Error Types This Week</h2>
+      <table>
+        <thead><tr><th>Error Type</th><th style="text-align:right">Count</th></tr></thead>
+        <tbody><tr><td>Photo shows wrong address</td><td style="text-align:right;font-weight:700">40</td></tr><tr><td>Parcel held (DPD)</td><td style="text-align:right;font-weight:700">27</td></tr><tr><td>Stolen</td><td style="text-align:right;font-weight:700">20</td></tr><tr><td>Can't Get Access</td><td style="text-align:right;font-weight:700">16</td></tr><tr><td>Box Damaged</td><td style="text-align:right;font-weight:700">13</td></tr></tbody>
+      </table>
+    </div>
+
+    
+    <div class="section">
+      <h2>Actions &amp; Improvements (8 open)</h2>
+      <table>
+        <thead><tr><th>Action</th><th>Owner</th><th>Due</th><th>Status</th></tr></thead>
+        <tbody><tr>
+          <td style="font-size:12px">Premptive error work</td>
+          <td style="font-size:12px;color:#555">Logistics Team</td>
+          <td style="font-size:12px;color:#555">Ongoinng</td>
+          <td><span class="action-badge badge-inprogress">In Progress</span></td>
+        </tr><tr>
+          <td style="font-size:12px">Monitor improvements to DPD collection times</td>
+          <td style="font-size:12px;color:#555">Operations</td>
+          <td style="font-size:12px;color:#555">Ongoing</td>
+          <td><span class="action-badge badge-inprogress">In Progress</span></td>
+        </tr><tr>
+          <td style="font-size:12px">Kent depot needs attention</td>
+          <td style="font-size:12px;color:#555">Depot Manager</td>
+          <td style="font-size:12px;color:#555">WK28</td>
+          <td><span class="action-badge badge-inprogress">In Progress</span></td>
+        </tr><tr>
+          <td style="font-size:12px">Continue monitoring missing box issues</td>
+          <td style="font-size:12px;color:#555">A&C</td>
+          <td style="font-size:12px;color:#555">WK28</td>
+          <td><span class="action-badge badge-open">Open</span></td>
+        </tr><tr>
+          <td style="font-size:12px">Monitor slight increase in wrong address</td>
+          <td style="font-size:12px;color:#555">Logistics Team</td>
+          <td style="font-size:12px;color:#555">WK28</td>
+          <td><span class="action-badge badge-inprogress">In Progress</span></td>
+        </tr><tr>
+          <td style="font-size:12px">Chat to riders regarding errors</td>
+          <td style="font-size:12px;color:#555">Bikes Manager</td>
+          <td style="font-size:12px;color:#555">WK28</td>
+          <td><span class="action-badge badge-open">Open</span></td>
+        </tr><tr>
+          <td style="font-size:12px">Ongoing parcel held and weekend delivery issues</td>
+          <td style="font-size:12px;color:#555">Logistics Team</td>
+          <td style="font-size:12px;color:#555">WK28</td>
+          <td><span class="action-badge badge-open">Open</span></td>
+        </tr><tr>
+          <td style="font-size:12px"></td>
+          <td style="font-size:12px;color:#555">DPD Manager</td>
+          <td style="font-size:12px;color:#555">WK24</td>
+          <td><span class="action-badge badge-inprogress">In Progress</span></td>
+        </tr></tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Next Steps</h2>
+      <p>The full interactive report provides drill-down analysis by courier, depot, driver, error type, and day of week. Please follow the link above to explore in detail. Any questions, please don't hesitate to get in touch.</p>
+    </div>
+
+  </div>
+  <div class="footer">
+    Freddie's Flowers Logistics · Week 27 · Generated 2026-07-10 · This summary is auto-generated from the weekly logistics data.
+  </div>
+</div>
+<p class="copy-hint">Open this file in a browser, select all (Ctrl/Cmd+A), copy, and paste into your email client — formatting will be preserved.</p>
+</body>
+</html>
