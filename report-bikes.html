@@ -6830,7 +6830,7 @@ function handleCSVUpload(event){
 <div class="upload-bar">
   <button id="sheets-btn" class="export-btn" onclick="syncFromSheets()" style="background:#1a6b3a;" title="Pull latest data directly from the Google Sheet">🔄 Sync from Sheets</button>
   <label for="csv-upload">📂 Load CSV<input type="file" id="csv-upload" accept=".csv" onchange="handleCSVUpload(event)"></label>
-  <span id="upload-status" class="ok">✓ Global Heston email downloaded — WK39</span>
+  <span id="upload-status" class="ok">✓ Downloaded WK39 — GSG Global</span>
   <div id="export-wrapper">
     <button class="export-btn" onclick="toggleExportMenu()">⬇ Export &amp; Share ▾</button>
     <div id="export-menu" style="display: block;">
@@ -6852,7 +6852,7 @@ function handleCSVUpload(event){
 </div>
 
 <div class="tabs">
-  <div class="tab" onclick="showPage('overview',this)">Overview</div>
+  <div class="tab active" onclick="showPage('overview',this)">Overview</div>
   
   
   <div class="tab" onclick="showPage('bikes',this)">FF Bikes</div>
@@ -6864,7 +6864,7 @@ function handleCSVUpload(event){
 </div>
 
 <!-- ══ OVERVIEW ══ -->
-<div class="page" id="page-overview" style="">
+<div class="page active" id="page-overview" style="">
   <div id="overview-insight" class="insight good">Error rate relatively stable at <strong>0.60% chargeable</strong> (-0.06pp vs last week). Saturday was the worst day at 2.12%; Monday the best at 0.64%. Top error type: <strong>Flowers not received - Stolen</strong> (19 cases). <strong>Bikes</strong> was the best-performing courier at 0.33%; <strong>DPD</strong> the highest at 1.08%.</div>
   <div class="kpi-row">
     <div class="kpi" id="kpi-orders"><div class="v">21,422</div><div class="l">Total Orders</div></div>
